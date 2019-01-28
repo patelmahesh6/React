@@ -14,6 +14,10 @@ create-react-app -V
 
 npx create-react-app react-samples
 
+
+npm install -g tslint
+npm install -g eslint
+
 ```
 
 
@@ -87,7 +91,6 @@ npm install node-sass --save
 
 ##### Extra 
 ```
-npm install -g tslint
 
 npm install --save bootstrap
 
@@ -120,3 +123,9 @@ npm install -g  graphql@latest
 
 ```
 ##### JSX 
+
+
+
+
+
+

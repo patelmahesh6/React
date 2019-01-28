@@ -1,31 +1,28 @@
 
-##### Git Pull  for Specific Project 
-```
-git init
+ ##### Git Pull  for Specific Project 
+	```
+	git init
 
-git config core.sparsecheckout true
+	git config core.sparsecheckout true
 
-echo react-cra/ >> .git/info/sparse-checkout
+	echo react-cra/ >> .git/info/sparse-checkout
 
-git remote add -f origin https://github.com/patelmahesh6/React.git
+	git remote add -f origin https://github.com/patelmahesh6/React.git
 
-git pull origin master
-
-
-```
+	git pull origin master
 
 
+	```
 
-##### React NutShell
+
+
+ ##### React NutShell
 
  * React DOM uses camelCase property naming convention instead of HTML attribute names.
    For example, class becomes className in JSX, and tabindex becomes tabIndex.
-
  * React elements are immutable. Once you create an element, you can’t change its children or attributes
-
  * Conceptually, components are like JavaScript functions. They accept arbitrary inputs (called “props”) and return React elements describing what should appear on the screen.
-
-  * React treats components starting with lowercase letters as DOM tags. 
+ * React treats components starting with lowercase letters as DOM tags. 
 
  ##### Props are Read-Only
  * In ReactJS we use props to send data to components.
