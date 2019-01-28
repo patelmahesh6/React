@@ -1,18 +1,16 @@
-# react-sample
-React Js Related Sample Code
 
-npx create-react-app my-app
-cd my-app
-npm start
+##### Git Pull  for Specific Project 
+```
+git init
+
+git config core.sparsecheckout true
+
+echo react-cra/ >> .git/info/sparse-checkout
+
+git remote add -f origin https://github.com/patelmahesh6/React.git
+
+git pull origin master
 
 
-# React Native 
+```
 
-#npm install -g react-native-cli
-
-#react-native init ReactNative
-
-
-create-react-native-app ReactNative
-
-npm start
