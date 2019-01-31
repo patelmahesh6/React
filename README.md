@@ -11,6 +11,7 @@
 
 	git pull origin master
 
+	git update-index --no-skip-worktree README.md
 
 	```
 
