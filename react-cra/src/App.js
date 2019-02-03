@@ -2,6 +2,7 @@ import React, { Component } from "react";
 import "./App.css";
 import { DatePicker } from "antd";
 import Clock from "./Clock";
+import Toggle from './Toggle';
 
 const name = "Developer";
 const intro = <h1>Hello , {name} </h1>;
@@ -70,6 +71,11 @@ function Comment(props) {
   );
 }
 
+function handleClick(e) {
+  e.preventDefault();
+  console.log("The link was clicked.");
+}
+
 class App extends Component {
   render() {
     return (
@@ -95,7 +101,9 @@ class App extends Component {
           text={comment.text}
           author={comment.author}
         />
-        <Clock/>
+        <Clock />
+        <button onClick={handleClick}> Click me</button>
+        <Toggle />
       </div>
     );
   }
