@@ -96,6 +96,8 @@ class App extends Component {
           author={comment.author}
         />
         <Clock/>
+        <Clock/>
+        <Clock/>
       </div>
     );
   }

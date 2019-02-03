@@ -25,13 +25,15 @@ export class  Clock extends Component {
   render() {
     return (
       <div>
-        <h2>It is {this.state.date.toLocaleTimeString()}.</h2>
+        <h2><FormattedDate date={this.state.date} /></h2>
       </div>
     );
   }
 }
 
 
-
+function FormattedDate(props) {
+  return <h2>It is {props.date.toLocaleTimeString()}.</h2>;
+}
 
 export default Clock;
