@@ -101,9 +101,14 @@ class App extends Component {
           text={comment.text}
           author={comment.author}
         />
-        <Clock />
+
         <button onClick={handleClick}> Click me</button>
         <Toggle />
+
+        <Clock/>
+        <Clock/>
+        <Clock/>
+
       </div>
     );
   }
