@@ -40,7 +40,8 @@
 - All class based components can be considered as stateful ReactJS components.
 - Stateful ReactJS Components inherits the class React.Component so, state get’s inherited.
 
-##### State 
+##### State
+Do Not Modify State Directly
 
 ##### Mounting
 
@@ -51,4 +52,53 @@ These methods are called in the following order when an instance of a component 
 - render()
 - componentDidMount()
 
+##### Updating
+
+An update can be caused by changes to props or state. These methods are called in the following order when a component is being re-rendered:
+
+- static getDerivedStateFromProps()
+- shouldComponentUpdate()
+- render()
+- getSnapshotBeforeUpdate()
+- componentDidUpdate()
+
+##### Unmounting
+
+This method is called when a component is being removed from the DOM:
+
+- componentWillUnmount()
+
+##### Error Handling
+
+These methods are called when there is an error during rendering, in a lifecycle method, or in the constructor of any child component.
+
+- static getDerivedStateFromError()
+- componentDidCatch()
+
+##### Some other APIs:
+
+		- setState()
+		- forceUpdate()
+  
+Class Properties
+
+		- defaultProps
+		- displayName
+
+Instance Properties
+
+		- props
+		- state
+
+
+constructor()
+
+- If you don’t initialize state and you don’t bind methods, you don’t need to implement a constructor for your React component.
+
+- The constructor for a React component is called before it is mounted. When implementing the constructor for a React.Component subclass, you should call super(props) before any other statement. Otherwise, this.props will be undefined in the constructor
+
+React constructors are only used for two purposes:
+
+	- Initializing local state by assigning an object to this.state.
+	- Binding event handler methods to an instance.
 
